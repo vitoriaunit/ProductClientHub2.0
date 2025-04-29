@@ -13,8 +13,8 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 
 var app = builder.Build();
 
-// Configurar Swagger apenas em desenvolvimento
-if (app.Environment.IsDevelopment())
+
+
 {
     app.UseSwagger();
     app.UseSwaggerUI();
